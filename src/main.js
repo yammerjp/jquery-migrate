@@ -19,10 +19,11 @@ if ( jQuery.migrateWarnings ) {
 	window.console.log( "JQMIGRATE: Migrate plugin loaded multiple times" );
 }
 
+jQuery.migrateMute = true;
 // Show a message on the console so devs know we're active
-window.console.log( "JQMIGRATE: Migrate is installed" +
-	( jQuery.migrateMute ? "" : " with logging active" ) +
-	", version " + jQuery.migrateVersion );
+// window.console.log( "JQMIGRATE: Migrate is installed" +
+// 	( jQuery.migrateMute ? "" : " with logging active" ) +
+// 	", version " + jQuery.migrateVersion );
 
 } )();
 
